@@ -8,7 +8,7 @@ var moveFile = (file, dir2)=>{
 
   //gets file name and adds it to dir2
   var f = path.basename(file);
-  var dest = path.resolve(dir2, f);
+  var dest = path.resolve(dir2, "order.csv");
 
   fs.rename(file, dest, (err)=>{
     if(err) throw err;
